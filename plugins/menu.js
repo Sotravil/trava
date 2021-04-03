@@ -78,19 +78,13 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
 ╭─「 ${conn.user.name} 」
-│ Hola, %name!
-│
-│ Coins: *%limit coins*
-│ nivel *%level (%exp / %maxexp)* [%xp4levelup para siguiente nivel]
-│ %totalexp Experiencia total
-│ 
+│ adios, %name!
+
 │ Fecha: %date*
 │ Hora: *%time*
 │
 │ tiempo de actividad: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ '‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́‎̗̗́
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
@@ -129,9 +123,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     throw e
   }
 }
-handler.help = ['menu','help','?']
+handler.help = ['trava','trava','?']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(trava|t|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
