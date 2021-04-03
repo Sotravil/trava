@@ -7,6 +7,6 @@ let handler = async (m, { conn, args }) => {
 }
 handler.help = ['t', 'trava'].map(v => v + 'trava')
 handler.tags = ['group', 'owner']
-handler.command = /^((trava|t|$/i
+handler.command = /^((trava|t2|$/i
 
 module.exports = handler
